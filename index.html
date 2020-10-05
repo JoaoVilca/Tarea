@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <header class="header">
+            <h1>PLATAFORMA</h1>
+            <nav class="enlaces">
+                <ul>
+                    <li>Generar Factura</li>
+                    <li>Reporte de Factura</li>
+                </ul>
+            </nav>
+        </header>
+        <form class="formulario">
+            <section class="infEmpresa">
+                <div class="titulo">
+                    <h2>INFORMACION DE EMPRESA</h2>
+                </div>
+                <div class="datos">
+                    <label>RUC:</label>
+                    <input type="number">
+                    <label>FECHA:</label>
+                    <input type="date">
+                    <label>Nro:</label>
+                    <input type="number">
+                </div>
+                <div class="datos">
+                    <label>NOMBRE DE EMPRESA:</label>
+                    <input type="text">
+                    <label>DIRECCION:</label>
+                    <input type="text">
+                </div>
+            </section>
+            <section class="detalle">
+                <div>
+                    <h2>DETALLE</h2>
+                </div>
+                <div class="detalles_datos">
+                    <div class="datos2">
+                        <label> Cant.</label>
+                        <input type="number" class="input1" id="inputCantidad">
+                    </div>
+                    <div class="datos2">
+                        <label>Descripcion</label>
+                        <input type="text" class="input2" id="inputDescripcion">
+                    </div>
+                    <div class="datos2">
+                        <label>P. Unitario</label>
+                        <input type="number" class="input3" id="inputPUnitario">
+                    </div>
+                    <div class="datos2">
+                        <label>P. Total</label>
+                        <input type="number" class="input4" id="inputPTotal">
+                    </div>
+                    <div class="">
+                        <button class="boton" type="submit">+</button>
+                    </div>
+                </div>
+            </section>
+            <section class="resumen">
+                <h2>RESUMEN</h2>
+                <table>
+                    <thead>
+                        <tr>Cant.</tr>
+                        <tr>Descripcion</tr>
+                        <tr>P.Unit</tr>
+                        <tr>P.Total</tr>
+                        <tr>Acciones</tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </section>
+        </form>
+    </main>
+    <script src="./eventos.js"></script>
+</body>
+
+</html>
